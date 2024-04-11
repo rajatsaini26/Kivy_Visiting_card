@@ -17,8 +17,9 @@ import pytesseract
 import os, cv2, imutils
 import numpy as np
 
-os.environ['TESSDATA_PREFIX'] = r"OCR/tessdata"
-pytesseract.pytesseract.tesseract_cmd = r"OCR/tesseract.exe"
+kivy.__version__ = "2.3.0"
+#os.environ['TESSDATA_PREFIX'] = r"OCR/tessdata"
+#pytesseract.pytesseract.tesseract_cmd = r"OCR/tesseract.exe"
 
 class MainApp(App):
     def build(self):
